@@ -1,0 +1,27 @@
+# BI - Justicia en Salud Guatemala (IGSS)
+# Dependencias Python
+
+# Core data processing
+pandas>=2.2.0
+numpy>=1.26.0
+openpyxl>=3.1.0          # Leer archivos .xlsm / .xlsx
+scipy>=1.12.0             # Análisis estadístico, regresión, Z-scores
+
+# Database
+sqlalchemy>=2.0.0         # ORM / abstracción de base de datos
+
+# Visualization & Dashboard
+plotly>=5.20.0            # Gráficas interactivas
+dash>=2.16.0              # Framework de dashboard web
+dash-bootstrap-components>=1.6.0  # Componentes de Bootstrap para Dash
+
+# Utilities
+loguru>=0.7.0             # Logging avanzado
+python-dotenv>=1.0.0      # Variables de entorno
+
+# Optional: Geographic analysis
+# folium>=0.16.0          # Mapas geográficos (habilitar si se usa el mapa)
+
+# Optional: Advanced analytics
+# scikit-learn>=1.4.0     # ML para detección de anomalías avanzada
+# networkx>=3.2.0         # Análisis de redes (si se agrega análisis de proveedores)

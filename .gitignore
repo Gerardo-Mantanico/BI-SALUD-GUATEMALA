@@ -1,0 +1,65 @@
+# ────────────────────────────────────────────────────────────
+# .gitignore — BI Justicia en Salud Guatemala (IGSS)
+# ────────────────────────────────────────────────────────────
+
+# Datos fuente (archivo original del IGSS — muy pesado, 27MB)
+data/raw/*.xlsm
+data/raw/*.xlsx
+data/raw/*.xls
+data/raw/*.csv
+
+# Base de datos del Data Warehouse (se regenera con el pipeline)
+data/warehouse/*.db
+data/warehouse/*.sqlite
+
+# Logs generados automáticamente
+data/logs/
+
+# Datos procesados (se regeneran con el pipeline)
+data/processed/*.csv
+
+# Exports (se regeneran con el análisis)
+exports/*.csv
+exports/*.txt
+exports/*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.env
+*.env
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Notas personales
+NOTES.md
+TODO.md
+scratch.py
+
+# Credenciales (NUNCA subir)
+*.key
+*.pem
+secrets.json
+config_local.py
